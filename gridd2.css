@@ -1,0 +1,445 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background: white;
+}
+img {
+
+    display: block;
+    width: 100%;
+
+
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+
+
+
+}
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 44px;
+    border-bottom: 1px solid #e4e4e4;
+
+
+
+}
+.header-links {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+
+
+
+}
+.logo-link {
+    display: flex;
+    align-items: center;
+
+
+
+}
+
+.logo {
+    width: 65px;
+    height: auto;
+
+
+}
+
+.hoofd-menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 42px;
+}
+
+
+
+.hoofd-menu a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+
+.hoofd-menu a.actief {
+    color: #e30613;
+}
+
+.hoofd-menu a.actief::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #e30613;
+    border-radius: 3px 3px 0 0;
+}
+
+
+
+.hoofd-menu .live {
+    height: 48px;
+    padding: 0 17px;
+    background: #fde8e8;
+    color: #e30613;
+    border-radius: 5px;
+}
+
+
+.header-knoppen button {
+    white-space: nowrap;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.header-knoppen {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.header-knoppen button img {
+    width: auto;
+    border-radius: 0;
+}
+
+
+
+.knop-zoeken img {
+    height: 45px;
+}
+
+
+
+.knop-instellingen img {
+    height: 50px;
+}
+
+.knop-teletekst img {
+    height: 58px;
+}
+
+
+
+.knop-npo img {
+    height: 30px;
+}
+
+
+.header-knoppen .menu-knop {
+    font-size: 17px;
+}
+.categorieen {
+    height: 70px;
+    border-bottom: 1px solid #dedede;
+}
+
+.categorie-links {
+    width: 85%;
+    max-width: 1310px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 43px;
+}
+
+.categorie-links a {
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.categorie-links .zwart {
+    padding: 12px 18px;
+    color: white;
+    background: #222;
+    border-radius: 25px;
+
+
+}
+.volgende-knop {
+    min-width: 38px;
+    height: 38px;
+    margin-left: auto;
+    border-radius: 50%;
+    font-size: 20px;
+    
+}
+
+
+.container {
+    width: 85%;
+    max-width: 1310px;
+    margin: 44px auto 100px;
+}
+
+
+.nieuws-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 44px;
+    align-items: start;
+
+
+}
+.nieuws {
+    min-width: 0;
+
+
+
+}
+.groot-nieuws {
+    position: relative;
+    height: 490px;
+    overflow: hidden;
+    border-radius: 4px;
+
+
+
+}
+.groot-nieuws img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+
+
+}
+.groot-nieuws::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 45%;
+    background: linear-gradient(transparent, black);
+
+
+
+
+}
+.groot-nieuws-tekst {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 18px;
+    z-index: 2;
+    color: white;
+
+
+
+
+}
+.groot-nieuws-tekst h1 {
+    max-width: 850px;
+    margin: 0;
+    font-size: 30px;
+    line-height: 1.15;
+    font-weight: 700;
+
+
+
+}
+.klein-nieuws {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 42px;
+    margin-top: 42px;
+
+
+
+}
+.ServieNieuws {
+    min-width: 0;
+    overflow: hidden;
+
+
+
+}
+.kleine-afbeelding-tekst {
+    padding-top: 13px;
+
+
+}
+.kleine-afbeelding-tekst h2 {
+    margin: 7px 0 0;
+    font-size: 20px;
+    line-height: 1.25;
+
+
+}
+.laatste-nieuws {
+    min-width: 0;
+    padding-left: 0;
+
+
+}
+.laatste-nieuws-kop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 25px;
+
+
+
+}
+.laatste-nieuws-kop h2 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.laatste-nieuws-kop a {
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.laatste-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 20px minmax(0, 1fr);
+    column-gap: 14px;
+    padding-bottom: 30px;
+}
+
+.laatste-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    bottom: -2px;
+    left: 5px;
+    border-left: 2px dotted #c9c9c9;
+}
+
+.bolletjes {
+    width: 8px;
+    height: 8px;
+    margin-top: 6px;
+    background: #222;
+    border-radius: 50%;
+    position: relative;
+    z-index: 2;
+}
+
+.laatste-item.eerste .bolletjes {
+    width: 11px;
+    height: 11px;
+    margin-left: -1px;
+    background: #ef3d3d;
+    border: 3px solid #ffdcdc;
+}
+
+.laatste-item span {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+    font-size: 14px;
+}
+
+.laatste-item .net-binnen {
+    color: #e30613;
+    font-weight: 600;
+}
+
+.laatste-item h3 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.3;
+    font-weight: 500;
+}
+
+.laatste-item.eerste h3 {
+    text-decoration: underline;
+}
+.uitgelicht {
+    margin-top: 70px;
+}
+
+.uitgelicht-kop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 25px;
+
+
+}
+.uitgelicht-kop h2 {
+    margin: 0;
+    font-size: 27px;
+
+
+
+}
+.uitgelicht-kop a {
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+
+
+
+}
+.uitgelicht-tekst {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+
+
+
+
+}
+.uitgelicht-stukje img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+
+
+
+}
+
+.uitgelicht-stukje h3 {
+    margin: 7px 0;
+    font-size: 19px;
+    line-height: 1.3;
+
+
+
+}
+.uitgelicht-stukje p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+}
